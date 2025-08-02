@@ -50,7 +50,7 @@ group :development do
   gem "web-console"
 
   # Highlight the fine-grained location where an error occurred [https://github.com/ruby/error_highlight]
-  gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
+  # gem "error_highlight", ">= 0.4.0", platforms: [ :ruby ]
 end
 
 group :test do
@@ -58,3 +58,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+# lint
+gem "rubocop"
+# api
+gem "faraday"
+gem "faraday-retry"
+# path
+gem "dotenv-rails"
+# i18n
+gem "rails-i18n", "~> 7.0"
