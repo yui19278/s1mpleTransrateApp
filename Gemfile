@@ -69,3 +69,4 @@ gem "faraday-retry"
 gem "dotenv-rails"
 # i18n
 gem "rails-i18n", "~> 7.0"
+gem "htmlbeautifier"
