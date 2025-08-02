@@ -58,3 +58,14 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+
+# lint
+gem "rubocop"
+# api
+gem "faraday"
+gem "faraday-retry"
+# path
+gem "dotenv-rails"
+# i18n
+gem "rails-i18n", "~> 7.0"
