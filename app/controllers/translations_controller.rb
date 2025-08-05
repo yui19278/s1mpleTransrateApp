@@ -4,7 +4,7 @@ class TranslationsController < ApplicationController
     end
     def create
         @translation = Translation.new(translation_params)
-        translated_text = TranslationAPIService.new(@translation.input_text).call
+        translated_text = TranslationApiService.new(@translation.input_text).call
 
         # 返り値
         if translated_text

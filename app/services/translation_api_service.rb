@@ -1,7 +1,7 @@
 require "faraday"
 require "faraday/retry"
 
-class TranslationAPIService
+class TranslationApiService
     ENDPOINT = "https://translation.googleapis.com/language/translate/v2"
     USER_AGENT = "translateApp1.0/wisteria"
     def initialize(text)
