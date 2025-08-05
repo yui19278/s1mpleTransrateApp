@@ -14,8 +14,11 @@ class TranslationApiService
     end
 
     def call
-        return if @text.blank?
-        response = @connection.get("", { key: @api_key, q: @text, target: "ja", source: "en" })
+        if @api_key.blank?
+            Rails.logger.error("APIキーが設定されていません。ENV['translate_api'] を確認してください。")
+            return nil
+        end
+        response = @connection.get("", { key: @api_key, q: @text, target: "en", source: "ja" })
         if response.success?
             response.body.dig("data", "translations", 0, "translatedText")
         else
