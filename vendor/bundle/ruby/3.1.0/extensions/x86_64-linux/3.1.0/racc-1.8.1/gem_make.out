@@ -1,0 +1,15 @@
+current directory: /home/yui19278/pixiv/s1mpleTranslateApp/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+/home/yui19278/.rbenv/versions/3.1.4/bin/ruby -I /home/yui19278/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /home/yui19278/pixiv/s1mpleTranslateApp/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250828-14776-f6mlft sitelibdir\=./.gem.20250828-14776-f6mlft clean
+
+current directory: /home/yui19278/pixiv/s1mpleTranslateApp/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250828-14776-f6mlft sitelibdir\=./.gem.20250828-14776-f6mlft
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/yui19278/pixiv/s1mpleTranslateApp/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250828-14776-f6mlft sitelibdir\=./.gem.20250828-14776-f6mlft install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250828-14776-f6mlft/racc
