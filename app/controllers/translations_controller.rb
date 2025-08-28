@@ -10,7 +10,7 @@ class TranslationsController < ApplicationController
         if translated_text
             @translation.translated_text = translated_text
         else
-            @translation.error.add(:base, "翻訳失敗")
+            @translation.errors.add(:base, "翻訳に失敗しました。時間をおいて再度お試しください。")
             Rails.logger.error("翻訳失敗")
             return render :new
         end
